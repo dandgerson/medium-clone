@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom'
 
+import TopBar from 'components/topBar'
 import Routes from 'routes'
 
 const App = () => (
   <div>
-    <div><span>Welcome to hooks</span></div>
     <BrowserRouter>
+      <TopBar />
       <Routes />
     </BrowserRouter>
   </div>
